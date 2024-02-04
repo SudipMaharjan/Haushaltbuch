@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BuchungBearbeiten</class>
+ <widget class="QWidget" name="BuchungBearbeiten">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1359</width>
+    <height>735</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="HauptLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1361</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(64, 118, 114);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Header">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>0</y>
+     <width>1241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(122, 31, 52);
+font: 600 italic 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Buchungen Bearbeiten</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonZurueck">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: #ffffff;
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1f618d;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Zurück</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="buchungNr">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>80</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSpeichern">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>660</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+        background-color: rgb(40, 53, 132);
+    color: #ffffff;
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #2c82c9;
+}
+
+QPushButton:pressed {
+    background-color: #1869ab;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Änderung speichern</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSuchen">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>80</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    color: #ffffff;
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid #2980b9;
+        background-color: rgb(149, 54, 54);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #8c2d2d;
+}
+
+QPushButton:pressed {
+    background-color: #6e2323;
+    border: 2px solid #7d2626;
+}</string>
+   </property>
+   <property name="text">
+    <string>Suchen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonBuchungLoeschen">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>660</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+    color: #ffffff;
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid #2980b9;
+        background-color: rgb(149, 54, 54);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #8c2d2d;
+}
+
+QPushButton:pressed {
+    background-color: #6e2323;
+    border: 2px solid #7d2626;
+}</string>
+   </property>
+   <property name="text">
+    <string>Buchung löschen</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="faelligkeitsdatumText">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>430</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Fälligkeitssdatum
+ (für Rechnungen)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="datumText">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>290</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Datum:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="kategorieText">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>150</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Kategorie:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="regelmaessigText">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>360</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>regelmässig ?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="notesText">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>510</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Notes:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="betragText">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>220</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Betrag:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonNein">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>360</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+    padding: 5px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+    background-color: #66bb6a;
+    color: white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: #66bb6a;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Nein</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>150</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+        font: 600 italic 15pt &quot;Segoe UI&quot;;
+        color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #f5f5f5;
+    selection-background-color: #66bb6a;
+    border: 1px solid #707070;
+    border-radius: 3px;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonJa">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>360</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QRadioButton {
+    padding: 5px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+    background-color: #66bb6a;
+    color: white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: #66bb6a;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Ja</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup_2</string>
+   </attribute>
+  </widget>
+  <widget class="QDateEdit" name="dateEditFaelligkeitsdatum">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>430</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+
+        font: 600 italic 15pt &quot;Segoe UI&quot;;
+        color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #f5f5f5;
+    selection-background-color: #66bb6a;
+}
+
+QDateEdit::drop-down {
+    width: 20px;
+    image: url(':/icons/calendar_icon.png');
+    subcontrol-position:
+    subcontrol-origin: padding;
+    right: 5px;
+}
+
+QDateEdit::down-arrow {
+    image: none;
+}
+
+QDateEdit::down-arrow:hover {
+    background-color: #ddd;
+}</string>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="notes">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>510</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:15pt; font-weight:600; font-style:italic;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditDatum">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>290</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+
+        font: 600 italic 15pt &quot;Segoe UI&quot;;
+        color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #f5f5f5;
+    selection-background-color: #66bb6a;
+}
+
+QDateEdit::drop-down {
+    width: 20px;
+    image: url(':/icons/calendar_icon.png');
+    subcontrol-position:
+    subcontrol-origin: padding;
+    right: 5px;
+}
+
+QDateEdit::down-arrow {
+    image: none;
+}
+
+QDateEdit::down-arrow:hover {
+    background-color: #ddd;
+}</string>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="betrag">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>220</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>15</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhMultiLine</set>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:15pt; font-weight:600; font-style:italic;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="kategorieText_2">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>80</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>BuchungNr</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="regelmaessigText_2">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>580</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Rechnung bezahlt ?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonBezahltJa">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>580</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QRadioButton {
+    padding: 5px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+    background-color: #66bb6a;
+    color: white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: #66bb6a;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Ja</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonBezahltNein">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>580</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+    padding: 5px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+    background-color: #66bb6a;
+    color: white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: #66bb6a;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Nein</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>

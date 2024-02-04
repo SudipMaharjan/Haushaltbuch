@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1359</width>
+    <height>735</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButtonProfil">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>0</y>
+      <width>151</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+    color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Profil</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HauptLabel">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-20</y>
+      <width>1371</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(64, 118, 114);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WillkommenText">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>251</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(132, 66, 99);
+font: 600 italic 15pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Willkommen,  </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BenutzerName">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(132, 66, 99);
+</string>
+    </property>
+    <property name="text">
+     <string>Mustermann</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSparplaeneAnschauen">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>268</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+    color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Sparpläne anschauen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBuchungBearbeiten">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>132</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+    color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Buchungen bearbeiten</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNeueBuchung">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>132</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+        color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Neue Buchung</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBuchungAnschauen">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>268</y>
+      <width>248</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+    color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Buchungen anschauen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNeueSparplan">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>200</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+    color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Neue Sparplan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSparplanBearbeiten">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>200</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgb(85, 85, 127);
+    color: rgb(255, 255, 255);
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid rgb(60, 60, 90);
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: rgb(70, 70, 107);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 50, 77);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Sparplan bearbeiten</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="Barchart_frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>1321</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </widget>
+   <widget class="QFrame" name="Piechart_frame">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>411</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonMonatlich">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QRadioButton {
+ 	font: 600 italic 10pt &quot;Segoe UI&quot;;
+    padding: 5px;
+    border: 2px solid rgb(132, 66, 99);
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+
+    background-color: rgb(85, 85, 127);
+    color: white;
+	border: 2px solid white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: rgb(85, 85, 127);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>monatlich</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonTaeglich">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QRadioButton {
+ 	font: 600 italic 10pt &quot;Segoe UI&quot;;
+    padding: 5px;
+    border: 2px solid rgb(132, 66, 99);
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+
+    background-color: rgb(85, 85, 127);
+    color: white;
+	border: 2px solid white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: rgb(85, 85, 127);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>täglich</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonJaehrlich">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QRadioButton {
+ 	font: 600 italic 10pt &quot;Segoe UI&quot;;
+    padding: 5px;
+    border: 2px solid rgb(132, 66, 99);
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+QRadioButton:checked {
+
+    background-color: rgb(85, 85, 127);
+    color: white;
+	border: 2px solid white;
+}
+
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+
+QRadioButton::indicator:checked {
+    background-color: rgb(85, 85, 127);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>jährlich</string>
+    </property>
+   </widget>
+   <zorder>HauptLabel</zorder>
+   <zorder>pushButtonProfil</zorder>
+   <zorder>WillkommenText</zorder>
+   <zorder>BenutzerName</zorder>
+   <zorder>pushButtonSparplaeneAnschauen</zorder>
+   <zorder>pushButtonBuchungBearbeiten</zorder>
+   <zorder>pushButtonNeueBuchung</zorder>
+   <zorder>pushButtonBuchungAnschauen</zorder>
+   <zorder>pushButtonNeueSparplan</zorder>
+   <zorder>pushButtonSparplanBearbeiten</zorder>
+   <zorder>Barchart_frame</zorder>
+   <zorder>Piechart_frame</zorder>
+   <zorder>radioButtonMonatlich</zorder>
+   <zorder>radioButtonTaeglich</zorder>
+   <zorder>radioButtonJaehrlich</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1359</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

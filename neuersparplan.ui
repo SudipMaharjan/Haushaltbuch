@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NeuerSparplan</class>
+ <widget class="QWidget" name="NeuerSparplan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1361</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1361</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(64, 118, 114);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>0</y>
+     <width>1231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(122, 31, 52);
+font: 600 italic 15pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Neuer Sparplan</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonZurueck">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: #ffffff;
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1f618d;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Zurück</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="zielBetrag">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>180</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zielBetragText">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>180</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Ziel Betrag</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditZielDatum">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>310</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+
+        font: 600 italic 15pt &quot;Segoe UI&quot;;
+        color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #f5f5f5;
+    selection-background-color: #66bb6a;
+}
+
+QDateEdit::drop-down {
+    width: 20px;
+    image: url(':/icons/calendar_icon.png');
+    subcontrol-position:
+    subcontrol-origin: padding;
+    right: 5px;
+}
+
+QDateEdit::down-arrow {
+    image: none;
+}
+
+QDateEdit::down-arrow:hover {
+    background-color: #ddd;
+}</string>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zielDatumText">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>310</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Ziel Datum:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Sparvariante">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>440</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 italic 15pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Sparvariante</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>440</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+        font: 600 italic 15pt &quot;Segoe UI&quot;;
+        color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #f5f5f5;
+    selection-background-color: #66bb6a;
+    border: 1px solid #707070;
+    border-radius: 3px;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonBestaetigen">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>560</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+
+        background-color: rgb(40, 53, 132);
+    color: #ffffff;
+    font: 600 italic 15pt &quot;Segoe UI&quot;;
+    padding: 10px 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+}
+
+QPushButton:hover {
+    background-color: #2c82c9;
+}
+
+QPushButton:pressed {
+    background-color: #1869ab;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Bestätigen</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
