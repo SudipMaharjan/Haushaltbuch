@@ -41,10 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->radioButtonMonatlich,&QPushButton::clicked,this,&MainWindow::Piechartmonatlich);
     connect(ui->radioButtonJaehrlich,&QPushButton::clicked,this,&MainWindow::Piechartjaehrlich);
 
-
-    //addBeispielBuchung();
-    //load();
-
+    load();
     getExchangeRates(apiKey);
     Barchartbauen();
     createPiechart();
